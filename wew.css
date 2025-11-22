@@ -1,0 +1,83 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ece2cc;
+    font-family: 'IM Fell English', serif;
+}
+
+/* Centering the vintage letter */
+.letter-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+/* Vintage paper look */
+.letter {
+    background: url("paper-texture.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 750px;
+    padding: 60px 70px;
+    color: #3b2f1a;
+    font-size: 1.2rem;
+    line-height: 2;
+    border-radius: 12px;
+
+    /* Old-paper shadow */
+    box-shadow:
+        0 0 20px rgba(0,0,0,0.4),
+        inset 0 0 50px rgba(0,0,0,0.3);
+    
+    /* Slight tilt for realism */
+    transform: rotate(-1deg);
+}
+
+/* Title in beautiful script */
+h1 {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: #4a341f;
+}
+
+/* Paragraph styling */
+p {
+    text-indent: 40px;
+    margin-bottom: 25px;
+}
+
+/* Vintage signature */
+.signature {
+    margin-top: 50px;
+    text-align: right;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color: #4a341f;
+}
+
+/* Burnt edges effect */
+.letter:before,
+.letter:after {
+    content: "";
+    position: absolute;
+    background: radial-gradient(rgba(0,0,0,0.5), transparent 60%);
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+}
+
+.letter:before {
+    top: -50px;
+    left: -50px;
+    
+}
+
+.letter:after {
+    bottom: -50px;
+    right: -50px;
+}
+
